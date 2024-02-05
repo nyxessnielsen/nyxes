@@ -1,0 +1,42 @@
+body { margin:0px;background:linear-gradient(to top,#65ABB6,#34696F);background:#65ABB6;position:relative;
+  --title: poppins, sans-serif;
+  --body: carlito, sans-serif;
+}
+a:link, a:active, a:visited { color: #beb3c3; text-decoration:none; }
+ 
+a:hover { color:#fdfdfd; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; transition: all 0.2s linear; }
+.hidden { display:none; }
+
+.bark-back { background-image:url(https://r4.wallpaperflare.com/wallpaper/388/297/315/ayanami-rei-neon-genesis-evangelion-anime-anime-girls-1920x1200-anime-hot-anime-hd-art-wallpaper-724112803d064e7bba1892f500a8a932.jpg);position:fixed;height:100%;width:100%;filter:blur(50px) grayscale(100%);mix-blend-mode:lighten; }
+.bark-front { position:relative;z-index:1;min-height:97vh;width:100%;min-width:1000px;display:flex;flex-direction:column;justify-content:center;align-items:center; }
+.bark-front-2 { display:grid;grid-template-columns:500px 350px;box-shadow:0px 0px 150px 10px rgba(245,245,245,.5);border-radius:15px;overflow:hidden; }
+.bark-left { background-color:#333;height:500px;position:relative; }
+.bark-left-img { height:100%;width:100%;background:linear-gradient(to bottom,#65ABB6,#34696F);mix-blend-mode:lighten;position:absolute; }
+.bark-left-img div { height:100%;width:100%;filter:grayscale(100%);mix-blend-mode:multiply;background-image:url(https://i.pinimg.com/564x/fc/ae/32/fcae32fdd6f3742ee793d361dddde5e6.jpg);background-size:cover;background-position:center; }
+#bark-left-songs { position:relative;padding:60px;color:#eee;display:flex;flex-direction:column;height:calc(100% - 0px);justify-content:flex-end;gap:9000PX; }
+#bark-left-songs::before { display:block;content:'NYXESS';position:absolute;top:350px;font:900 55px var(--title);width:310px;line-height:50px;text-shadow:2px 2px 6px rgba(40,40,40,.5); }
+
+
+.bark-right { background-color:#e3e3e3;position:relative;overflow:hidden; }
+@keyframes ROUND {
+  0% { transform:rotate(0deg); }
+  100% { transform:rotate(360deg); }
+}
+.bark-record { height:430px;width:430px;border-radius:100%;position:absolute;top:-25px;left:-215px;background-color:#d9d9d9;overflow:hidden;display:flex;align-items:top;justify-content:right;box-shadow:0px 0px 0px 3px #eeeeee,0px 0px 75px rgba(0,0,0,.2),inset 0px 0px 0px 25px #d9d9d9,inset 0px 0px 0px 26px #eeeeee,inset 0px 0px 0px 50px #d9d9d9,inset 0px 0px 0px 51px #eeeeee,inset 0px 0px 0px 75px #d9d9d9,inset 0px 0px 0px 76px #eeeeee,inset 0px 0px 0px 100px #d9d9d9,inset 0px 0px 0px 101px #eeeeee,inset 0px 0px 0px 125px #d9d9d9,inset 0px 0px 0px 126px #eeeeee,inset 0px 0px 0px 150px #d9d9d9,inset 0px 0px 0px 151px #eeeeee,inset 0px 0px 0px 175px #d9d9d9,inset 0px 0px 0px 210px #333,inset 0px 0px 0px 212px #d9d9d9,inset 0px 0px 0px 215px #65B684;animation:infinite linear 10s ROUND;animation-play-state: paused; }
+.bark-record.rotate { animation-play-state:running; }
+.bark-record::before { content:'';display:block;position:absolute;height:0px;width:0px;border-left:solid 215px rgba(255,255,255,.15);border-top:solid 215px transparent;border-bottom:solid 150px transparent;margin-top:-150px;mix-blend-mode:overlay; }
+.bark-record::after { content:'';display:block;position:absolute;height:0px;width:0px;border-right:solid 215px rgba(255,255,255,.15);border-top:solid 150px transparent;border-bottom:solid 215px transparent;margin:215px 215px 0px 0px;mix-blend-mode:overlay; }
+.bark-music { position:relative;z-index:1; }
+.bark-music-misc { display:flex;background-color:#333;gap:15px;padding:20px;color:#d9d9d9;height:15px;font:700 12px var(--body);text-transform:uppercase;letter-spacing:2px;line-height:15px; }
+.bark-music-misc i { font-size:15px;color:#65ABB6;cursor:pointer; }
+.bark-music-song { padding:60px 50px 35px 50px; }
+#bark-music-img { background-color:#333;border-radius:5px;height:150px;width:150px;margin:0px auto; }
+#bark-music-img img { filter:contrast(85%) brightness(90%) grayscale(100%);height:150px;width:100%;mix-blend-mode:lighten;border-radius:5px;transition:.3s;cursor:pointer; }
+#bark-music-img img:hover { filter:contrast(100%) brightness(100%) grayscale(0%); }
+#songtitle { font:800 31px var(--title);text-transform:uppercase;background:linear-gradient(to bottom,#65ABB6,#34696F);background-clip:text;-webkit-background-clip:text;color:transparent;line-height:30px;text-align:center;height:60px;display:flex;align-items:center;justify-content:center;margin:35px 0px 10px 0px; }
+#artistname { font:900 17px var(--title);text-transform:uppercase;color:#333;line-height:15px;text-align:center;margin:0px; }
+.bark-music-bot { padding:0px 50px;display:flex;gap:15px;justify-content:center; }
+.bark-music-bot button { border-radius:0px;border:none;background-color:transparent;transition:.3s; }
+.bark-music-bot button:hover { transform:scale(1.25);cursor:pointer; }
+.bark-music-bot i { font-size:30px;color:#333; }
+.bark-music-bot button i { opacity:1!important;background:linear-gradient(to bottom,#65ABB6,#34696F);background-clip:text;-webkit-background-clip:text;color:transparent; }
